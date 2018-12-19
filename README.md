@@ -17,8 +17,10 @@ docker-compose restart
 docker-compose rm [options] [SERVICES...]
 #### 在指定服务执行命令
 docker-compose run [options] SERVICE [COMMAND...]
+```shell
 // 不关联启动加--no-deps,如下所示
 docker-compose run --no-deps web python manage.py shell
+```
 #### 启动服务容器
 docker-compose start [SERVICE]
 #### 停止
